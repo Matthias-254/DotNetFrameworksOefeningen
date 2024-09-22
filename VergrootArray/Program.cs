@@ -2,19 +2,6 @@
 {
     internal class Program
     {
-        static int[] VergrootArray(int[] oudeArray, int nieuwElement)
-        {
-            int[] nieuweArray = new int[oudeArray.Length + 1];
-
-            for (int i = 0; i < oudeArray.Length; i++)
-            {
-                nieuweArray[i] = oudeArray[i];
-            }
-
-            nieuweArray[nieuweArray.Length - 1] = nieuwElement;
-
-            return nieuweArray;
-        }
         static void Main(string[] args)
         {
             int[] mijnArray = new int[4] { 1, 2, 3, 4 };
@@ -38,9 +25,24 @@
             mijnArray = VergrootArray(mijnArray, 8);
             PrintArray(mijnArray);
         }
+
+        static int[] VergrootArray(int[] oudeArray, int nieuwElement)
+        {
+            int[] nieuweArray = new int[oudeArray.Length + 1];
+
+            for (int i = 0; i < oudeArray.Length; i++)
+            {
+                nieuweArray[i] = oudeArray[i];
+            }
+
+            nieuweArray[nieuweArray.Length - 1] = nieuwElement;
+
+            return nieuweArray;
+        }
+
         static void PrintArray(int[] array)
         {
-            foreach (var item in array)
+            foreach (int item in array)
             {
                 Console.Write(item + " ");
             }
