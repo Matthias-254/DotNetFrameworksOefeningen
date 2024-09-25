@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nullables", "nullables\null
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "accessors", "accessors\accessors.csproj", "{013D54E6-38F9-4F97-862F-72723F25FBEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneriekeCollecties", "GeneriekeCollecties\GeneriekeCollecties.csproj", "{2F5F5489-8C11-42AD-9C72-259723D4382B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneriekeCollecties", "GeneriekeCollecties\GeneriekeCollecties.csproj", "{2F5F5489-8C11-42AD-9C72-259723D4382B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate", "Delegate\Delegate.csproj", "{E7E45D26-BE04-4EB7-AE1E-309642D531DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{2F5F5489-8C11-42AD-9C72-259723D4382B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F5F5489-8C11-42AD-9C72-259723D4382B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F5F5489-8C11-42AD-9C72-259723D4382B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7E45D26-BE04-4EB7-AE1E-309642D531DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7E45D26-BE04-4EB7-AE1E-309642D531DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7E45D26-BE04-4EB7-AE1E-309642D531DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7E45D26-BE04-4EB7-AE1E-309642D531DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
