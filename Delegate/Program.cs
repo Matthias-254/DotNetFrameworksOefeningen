@@ -53,7 +53,7 @@
                     alarmOptie();
                 }
 
-            } while(keuze != 'Q');
+            } while (keuze != 'Q');
         }
 
         static void TijdInstellenMenu()
@@ -87,5 +87,7 @@
             string keuze = Console.ReadLine();
             Console.WriteLine($"Wekmethode {keuze} gekozen.\n");
         }
+
+        //Dit is een test
     }
 }
