@@ -88,7 +88,6 @@
             Console.WriteLine($"Wekmethode {keuze} gekozen.\n");
         }
 
-        //Dit is een test
+        //Laatste test
     }
-    //test2
 }
