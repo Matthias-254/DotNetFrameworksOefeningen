@@ -87,7 +87,5 @@
             string keuze = Console.ReadLine();
             Console.WriteLine($"Wekmethode {keuze} gekozen.\n");
         }
-
-        //Laatste test
     }
 }
