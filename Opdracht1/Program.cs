@@ -1,10 +1,10 @@
-﻿namespace KennismakingEF
+﻿namespace Opdracht1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Dit is Entity Frameworks");
+            Console.WriteLine("opdracht 1");
         }
     }
 }
