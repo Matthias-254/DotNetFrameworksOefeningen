@@ -11,7 +11,20 @@ namespace Opdracht1
         public string Isbn { get; set; }
         public string Naam { get; set; }
         public string Uitgever { get; set; }
-        public decimal Prijs { get; set; }
+        private decimal prijs;
+        public decimal Prijs
+        {
+            get { return prijs; }
+            set
+            {
+                if (value < 5)
+                    prijs = 5;
+                else if (value > 50)
+                    prijs = 50;
+                else
+                    prijs = value;
+            }
+        }
 
         public Boek(string isbn, string naam, string uitgever, decimal prijs)
         {
