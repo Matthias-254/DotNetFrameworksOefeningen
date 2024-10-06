@@ -11,8 +11,8 @@ namespace Opdracht1
         public string Isbn { get; set; }
         public string Naam { get; set; }
         public string Uitgever { get; set; }
-        private decimal prijs;
-        public decimal Prijs
+        private double prijs;
+        public double Prijs
         {
             get { return prijs; }
             set
@@ -26,7 +26,7 @@ namespace Opdracht1
             }
         }
 
-        public Boek(string isbn, string naam, string uitgever, decimal prijs)
+        public Boek(string isbn, string naam, string uitgever, double prijs)
         {
             Isbn = isbn;
             Naam = naam;
@@ -51,7 +51,7 @@ namespace Opdracht1
             Uitgever = Console.ReadLine();
 
             Console.WriteLine("Geef de prijs in:");
-            Prijs = decimal.Parse(Console.ReadLine());
+            Prijs = double.Parse(Console.ReadLine());
         }
     }
 }

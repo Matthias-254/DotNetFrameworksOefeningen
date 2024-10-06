@@ -10,7 +10,6 @@ namespace Opdracht1
     {
         private static int laatsteId = 0;
 
-        // Eigenschappen
         public int Id { get; private set; }
         public T Item { get; set; }
         public DateTime Datum { get; set; }
@@ -26,18 +25,18 @@ namespace Opdracht1
             AbonnementPeriode = periode;
         }
 
-        public Tuple<string, int, decimal> Bestel(Boek boek)
+        public Tuple<string, int, double> Bestel(Boek boek)
         {
-            decimal totalePrijs = boek.Prijs * Aantal;
+            double totalePrijs = boek.Prijs * Aantal;
 
             OnBoekBesteld(new BestellingEventArgs($"Bestelling voor boek '{boek.Naam}' is geplaatst."));
 
-            return new Tuple<string, int, decimal>(boek.Isbn, Aantal, totalePrijs);
+            return new Tuple<string, int, double>(boek.Isbn, Aantal, totalePrijs);
         }
 
         public event EventHandler<BestellingEventArgs> BoekBesteld;
 
-        protected virtual void OnBoekBesteld(BestellingEventArgs e)
+        protected void OnBoekBesteld(BestellingEventArgs e)
         {
             if (BoekBesteld != null)
             {

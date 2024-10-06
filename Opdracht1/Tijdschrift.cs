@@ -10,7 +10,7 @@ namespace Opdracht1
     {
         public Verschijningsperiode Periode { get; set; }
 
-        public Tijdschrift(string isbn, string naam, string uitgever, decimal prijs, Verschijningsperiode periode)
+        public Tijdschrift(string isbn, string naam, string uitgever, double prijs, Verschijningsperiode periode)
             : base(isbn, naam, uitgever, prijs)
         {
             Periode = periode;
