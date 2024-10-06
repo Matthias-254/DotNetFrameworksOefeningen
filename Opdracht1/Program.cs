@@ -10,6 +10,9 @@
     {
         static void Main(string[] args)
         {
+
+            Console.OutputEncoding = System.Text.Encoding.UTF8; //Om het euro teken te kunnen weergeven
+
             Boek boek1 = new Boek("978-3-16-148410-0", "C# Basisboek", "Pearson", 29.99);
             Tijdschrift tijdschrift1 = new Tijdschrift("1234-5678-9101", "Tech Daily", "TechMedia", 5.99, Verschijningsperiode.Dagelijks);
 
