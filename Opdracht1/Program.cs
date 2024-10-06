@@ -10,26 +10,24 @@
     {
         static void Main(string[] args)
         {
-            // Twee Boeken
             Boek boek1 = new Boek("978-3-16-148410-0", "C# Basisboek", "Pearson", 29.99m);
-            Boek boek2 = new Boek("978-0-12-345678-9", "Geavanceerde C#", "Packt", 39.99m);
-
-            // Twee Tijdschriften
             Tijdschrift tijdschrift1 = new Tijdschrift("1234-5678-9101", "Tech Daily", "TechMedia", 5.99m, Verschijningsperiode.Dagelijks);
-            Tijdschrift tijdschrift2 = new Tijdschrift("2345-6789-1011", "Science Weekly", "ScienceHub", 3.99m, Verschijningsperiode.Wekelijks);
 
-            // Weergave van de Boeken
-            Console.WriteLine(boek1.ToString());
-            Console.WriteLine(boek2.ToString());
+            Bestelling<Boek> bestellingBoek = new Bestelling<Boek>(boek1, 3);
 
-            // Weergave van de Tijdschriften
-            Console.WriteLine(tijdschrift1.ToString());
-            Console.WriteLine(tijdschrift2.ToString());
+            bestellingBoek.BoekBesteld += BestellingBoek_BoekBesteld;
 
-            // Gebruik van de Lees-methode om een Tijdschrift interactief aan te maken
-            Tijdschrift tijdschrift3 = new Tijdschrift("", "", "", 0, Verschijningsperiode.Maandelijks);
-            tijdschrift3.Lees();
-            Console.WriteLine(tijdschrift3.ToString());
+            var boekBestelInfo = bestellingBoek.Bestel(boek1);
+
+            Console.WriteLine($"ISBN: {boekBestelInfo.Item1}, Aantal: {boekBestelInfo.Item2}, Totale Prijs: €{boekBestelInfo.Item3}");
+
+            Bestelling<Tijdschrift> bestellingTijdschrift = new Bestelling<Tijdschrift>(tijdschrift1, 12, Verschijningsperiode.Maandelijks);
+            Console.WriteLine($"Bestelling voor tijdschrift '{tijdschrift1.Naam}' met {bestellingTijdschrift.Aantal} edities en {bestellingTijdschrift.AbonnementPeriode} abonnement.");
+        }
+
+        private static void BestellingBoek_BoekBesteld(object sender, BestellingEventArgs e)
+        {
+            Console.WriteLine(e.Bericht);
         }
     }
 }
