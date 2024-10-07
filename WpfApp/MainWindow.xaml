@@ -7,9 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btnChangeColor" Content="Change Color" Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Background="LightBlue"/>
-        <TextBox x:Name="txtInput" Width="200" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0" Text="Type something here"/>
-        <Label x:Name="lblMessage" Content="Hello WPF!" Width="200" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,100,0,0" FontSize="16" Foreground="Green"/>
-        <Button x:Name="btnChangeText" Content="Change Text" Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,150,0,0" Background="LightCoral"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnChangeColor" Content="Change Color" Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Background="LightBlue" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtInput" Width="200" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0" Text="Type something here" Grid.ColumnSpan="2" TextChanged="txtInput_TextChanged"/>
+        <Label x:Name="lblMessage" Content="Hello WPF!" Width="200" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,100,0,0" FontSize="16" Foreground="Green" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnChangeText" Content="Change Text" Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,150,0,0" Background="LightCoral" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>

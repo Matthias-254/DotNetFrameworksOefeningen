@@ -9,7 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApp
+namespace Containers
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -19,11 +19,6 @@ namespace WpfApp
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void txtInput_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }
