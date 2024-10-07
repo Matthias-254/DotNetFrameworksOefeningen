@@ -36,7 +36,7 @@ namespace Opdracht1
 
         public override string ToString()
         {
-            return $"Boek: {Naam}, ISBN: {Isbn}, Uitgever: {Uitgever}, Prijs: €{Prijs}";
+            return $"Naam: {Naam}, ISBN: {Isbn}, Uitgever: {Uitgever}, Prijs: €{Prijs}";
         }
 
         public void Lees()
