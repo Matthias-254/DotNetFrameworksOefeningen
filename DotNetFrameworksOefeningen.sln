@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegate", "Delegate\Delega
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Event", "Event\Event.csproj", "{474A9671-9F1C-4DF6-8BD8-9E5F4F3946FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KennismakingEF", "KennismakingEF\KennismakingEF.csproj", "{CFEE96F2-03AF-48CA-AC28-C5EBA6964499}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KennismakingEF", "KennismakingEF\KennismakingEF.csproj", "{CFEE96F2-03AF-48CA-AC28-C5EBA6964499}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opdracht1", "Opdracht1\Opdracht1.csproj", "{0A2C46C0-E777-403B-B732-0FAE5FE3DADD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opdracht1", "Opdracht1\Opdracht1.csproj", "{0A2C46C0-E777-403B-B732-0FAE5FE3DADD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "WpfApp\WpfApp.csproj", "{1B07719D-2D57-4B22-9533-80C947BD41E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{0A2C46C0-E777-403B-B732-0FAE5FE3DADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A2C46C0-E777-403B-B732-0FAE5FE3DADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A2C46C0-E777-403B-B732-0FAE5FE3DADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B07719D-2D57-4B22-9533-80C947BD41E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B07719D-2D57-4B22-9533-80C947BD41E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B07719D-2D57-4B22-9533-80C947BD41E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B07719D-2D57-4B22-9533-80C947BD41E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
