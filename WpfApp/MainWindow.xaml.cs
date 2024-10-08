@@ -21,9 +21,23 @@ namespace WpfApp
             InitializeComponent();
         }
 
-        private void txtInput_TextChanged(object sender, TextChangedEventArgs e)
+        private void btnChangeColor_Click(object sender, RoutedEventArgs e)
         {
+            // Wijzig de achtergrondkleur van de label
+            lblMessage.Background = new SolidColorBrush(Colors.Yellow);
+        }
 
+        // Event handler voor het wijzigen van de tekst
+        private void btnChangeText_Click(object sender, RoutedEventArgs e)
+        {
+            // Wijzig de tekst van de label op basis van de tekst in de TextBox
+            lblMessage.Content = txtInput.Text;
+        }
+
+        // Event handler voor TextBox tekstverandering
+        private void txtInput_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            // Hier kan je extra functionaliteit toevoegen als je dat wilt
         }
     }
 }
