@@ -20,5 +20,33 @@ namespace Containers
         {
             InitializeComponent();
         }
+
+        private void Cell_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Border cell = sender as Border;
+            if (cell != null)
+            {
+                cell.Background = new SolidColorBrush(Colors.Red);
+            }
+        }
+
+        private void Cell_MouseLeave(object sender, MouseEventArgs e)
+        {
+            Border cell = sender as Border;
+            if (cell != null)
+            {
+                int row = Grid.GetRow(cell);
+                int column = Grid.GetColumn(cell);
+
+                if ((row + column) % 2 == 0)
+                {
+                    cell.Background = new SolidColorBrush(Colors.White);
+                }
+                else
+                {
+                    cell.Background = new SolidColorBrush(Colors.Black);
+                }
+            }
+        }
     }
 }
